@@ -1,3 +1,4 @@
+/*Global*/
 *{
     margin: 0;
     padding: 0;
@@ -6,14 +7,14 @@
 
 html{
     font-size: 10px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', Helvetica, sans-serif;
 }
 
 body{
     width: 100%;
     height: 100%;
+    background: linear-gradient(180deg, gray, #F0F0F0);
 }
-
 
 a{
     text-decoration: none;
@@ -25,15 +26,12 @@ p{
     font-weight: 300;
 }
 
-header{
-    width: 100%;
-}
-
-div{
+/*section{
     position: relative;
     top: 50px;
-}
+}*/
 
+/*Navigation Menu*/
 .nav-list{
     width: 100%;
     padding: 10px;
@@ -47,7 +45,6 @@ div{
 
 .nav-item{
     margin: 0 10rem;
-    font-family: 'Montserrat', Helvetica Neue, Helvetica, sans-serif;
     font-size: 2rem;
 }
 
@@ -56,5 +53,16 @@ div{
     background: white;
     -webkit-background-clip: text;
     -webkit-text-fill-color:transparent;
+}
 
+/*Landing Page*/
+.landing{
+    height: 100%;
+    width: 100%;
+    padding: 50vh;
+    text-align: center;
+}
+
+.landing h1{
+    font-size: 10rem;
 }
