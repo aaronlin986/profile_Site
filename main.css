@@ -11,7 +11,10 @@ html{
 }
 
 body{
+    background: linear-gradient(180deg, #003366, #1f263b) fixed;
     width: 100%;
+    margin: 0;
+    color: #BEBEBE;
 }
 
 a{
@@ -19,45 +22,40 @@ a{
     color: #B0B0B0;
 }
 
-p{
-    font-size: 1.8rem;
-    font-weight: 300;
-}
-
 .container{
-    padding: 10px 0px;
-}
-
-/*Navigation Menu*/
-.nav-list{
-    width: 10%;
-    height: 100%;
-    right: 0px;
-    position: fixed;
-    background-color:#202020;
-    opacity: 0.9;
-    list-style: none;
+    height: 100vh;
+    width: 100%;
+    padding: 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
 }
 
-.nav-item{
-    padding: 50px 10px;
-    font-size: 2rem;
+.detail {
+    display: flex;
 }
 
-.nav-item:hover,
-.nav-item:focus{
-    background: white;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+.detail img {
+    position: relative;
+    width: 500px;
+
+}
+
+.detail p{
+    position: relative;
+    font-size: 1.5em;
+    width: 500px;
+    padding: 50px;
+}
+
+.heading {
+    font-size: 3em;;
+    opacity: 0.5;
+    padding: 50px;
 }
 
 /*Landing Page*/
 .landing{
-    background: linear-gradient(180deg, gray, #F0F0F0);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -76,35 +74,39 @@ p{
     100% {opacity:1;}
 }
 
-/*About Page*/
-.about{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    top: -500px;
-    text-align: center;
-    z-index: -1;
+#menu {
+    position: fixed;
+    width: 200px;
+    height: 250px;
+    top: 300px;
+    right: 0px;
+}
+
+circle, text {
+    transition: fill 0.5s, font-size 0.5s, r 0.5s;
+}
+
+#active {
+    transition: cy 0.5s;
+}
+
+g:hover [id="0"], g:hover [id=section1] {
+    fill: black !important;
+    font-size: 1.5em;
 
 }
 
-/*Experience*/
-.experience{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    top: -1000px;
-    text-align: center;
-    z-index: -1;
+g:hover [id="1"], g:hover [id=section2] {
+    fill: black !important;
+    font-size: 1.5em;
 }
 
-/*Contact*/
-.contact{
-    position: relative;
-    width: 100%;
-    height: 500px;
-    top: -1500px;
-    text-align: center;
-    z-index: -1;
+g:hover [id="2"], g:hover [id=section3] {
+    fill: black !important;
+    font-size: 1.5em;
 }
 
-
+g:hover [id="3"], g:hover [id=section4] {
+    fill: black !important;
+    font-size: 1.5em;
+}
