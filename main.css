@@ -8,6 +8,7 @@
 html{
     font-size: 10px;
     font-family: 'Montserrat', Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -22,6 +23,12 @@ a{
     color: #B0B0B0;
 }
 
+p {
+    font-size: 1.5em;
+    width: 500px;
+    padding: 0px 50px 0px 50px;
+}
+
 .container{
     height: 100vh;
     width: 100%;
@@ -31,27 +38,10 @@ a{
     align-items: center;
 }
 
-.detail {
-    display: flex;
-}
-
-.detail img {
-    position: relative;
-    width: 500px;
-
-}
-
-.detail p{
-    position: relative;
-    font-size: 1.5em;
-    width: 500px;
-    padding: 50px;
-}
-
 .heading {
-    font-size: 3em;;
+    font-size: 3em;
     opacity: 0.5;
-    padding: 50px;
+    padding: 0px 0px 50px 0px;
 }
 
 /*Landing Page*/
@@ -74,6 +64,56 @@ a{
     100% {opacity:1;}
 }
 
+/*About*/
+.detail {
+    display: flex;
+    align-items: center;
+}
+
+#about .detail img {
+    width: 500px;
+
+}
+
+/*Experience*/
+#exp .detail {
+    display: flex;
+    flex-direction: column;
+}
+
+#exp .exp1 {
+    display: flex;
+    align-items: center;
+    padding: 0px 0px 20px 0px;
+}
+
+#exp .exp2 {
+    display: flex;
+    align-items: center;
+}
+
+#exp img {
+    width: 200px;
+    height: 200px;
+}
+
+/*Contact*/
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    font-size: 2em;
+}
+
+#contact label {
+    padding: 1em 0px 0px 0px;
+}
+
+#contact input, textarea {
+    padding: 1em;
+}
+
+/*Nav bar*/
 #menu {
     position: fixed;
     width: 200px;
