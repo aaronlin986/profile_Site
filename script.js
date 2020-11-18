@@ -32,3 +32,19 @@ function activate(item, order) {
 
     update(item, order);
 }
+
+window.addEventListener("scroll", () => {
+    var current = window.pageYOffset;
+    if(current >= 2140) {
+        activate("section4", "3");
+    }
+    else if(current >= 1350) {
+        activate("section3", "2");
+    }
+    else if(window.pageYOffset >= 480) {
+        activate("section2", "1");
+    }
+    else {
+        activate("section1", "0");
+    }
+});

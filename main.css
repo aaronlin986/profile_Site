@@ -119,6 +119,11 @@ p {
     width: 200px;
     height: 250px;
     top: 300px;
+    right: -150px;
+    transition: right 0.5s;
+}
+
+#menu:hover {
     right: 0px;
 }
 
